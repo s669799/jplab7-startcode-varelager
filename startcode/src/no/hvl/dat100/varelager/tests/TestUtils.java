@@ -37,7 +37,7 @@ class TestUtils {
 	}
 
 	@Test
-	void testfinnPriser() {
+	void testfinnVarenr() {
 		
 		int[] numre = {0,1,2};
 		
