@@ -80,4 +80,21 @@ class TestVarelager {
 		varelager.printVarelager();
 	}
 	
+	@Test 
+	void testfinnVare() {
+		
+		varelager.leggTilVare(v0);
+		varelager.leggTilVare(v1);
+		varelager.leggTilVare(v2);
+		assertEquals(v1,varelager.finnVare(1));
+	}
+	
+	@Test 
+	void testfinnVareNull() {
+		
+		varelager.leggTilVare(v0);
+		varelager.leggTilVare(v1);
+		varelager.leggTilVare(v2);
+		assertNull(varelager.finnVare(4));
+	}
 }
