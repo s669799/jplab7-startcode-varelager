@@ -25,13 +25,13 @@ public class Varelager {
 	
 	public boolean leggTil(int varenr, String navn, double pris) {
 		
-		throw new TODO("leggTilVare");
+		throw new TODO("leggTil");
 
 	}
 	
 	public Vare finnVare(int varenr) {
 			
-		throw new TODO("leggTilVare");
+		throw new TODO("finnVare");
 
 	}
 	
@@ -39,7 +39,7 @@ public class Varelager {
 	
 	public void printVarelager() {
 				
-		throw new TODO("leggTilVare");
+		throw new TODO("printVarelager");
 
 	}
 	
