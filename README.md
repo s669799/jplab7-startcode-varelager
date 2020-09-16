@@ -1,1 +1,1 @@
-# jplab8-startcode-varelager
+Start-kode for oppgave med Vare-klasse og referansetabell med varer.
