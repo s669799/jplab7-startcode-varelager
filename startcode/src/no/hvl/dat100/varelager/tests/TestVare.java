@@ -23,7 +23,7 @@ class TestVare {
 	@BeforeEach
 	void setUp() throws Exception {
 		
-		v = new Vare(1,"ostepops",200);
+		v = new Vare(1,"ostepops",200.0);
 	}
 
 	@Test
