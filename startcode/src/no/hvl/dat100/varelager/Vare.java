@@ -43,8 +43,8 @@ public class Vare {
 	}
 
 	public String toString() {
-		String utTxt = "Vare [varenr=" + varenr + ", navn=" + navn + ", pris=" + pris + "]";
-		return utTxt;
+		return "Vare [varenr=" + varenr + ", navn=" + navn + ", pris=" + pris + "]";
+		
 	}
 
 	public boolean erBilligereEnn(Vare v) {
