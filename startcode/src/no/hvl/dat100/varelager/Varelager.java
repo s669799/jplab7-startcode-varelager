@@ -9,36 +9,45 @@ public class Varelager {
 
 		varer = new Vare[n];
 		antall = 0;
-
 	}
 
 	public Vare[] getVarer() {
 
 		return varer;
-
 	}
 
 	public boolean leggTilVare(Vare v) {
-		
+
 		boolean lagtTil = false;
 		if (antall < varer.length) {
-			varer[antall + 1] = v;
+			varer[antall] = v;
 			lagtTil = true;
+			antall++;
 		}
-		antall++;
+
 		return lagtTil;
 
 	}
 
 	public boolean leggTil(int varenr, String navn, double pris) {
 
-		throw new TODO("leggTil");
-
+		Vare a = new Vare(varenr, navn, pris);
+		return leggTilVare(a);
 	}
 
 	public Vare finnVare(int varenr) {
 
-		throw new TODO("finnVare");
+		int i = 0;
+		boolean funnet = false;
+		Vare svar = null;
+
+		while (i < varer.length && !funnet) {
+			if (varenr == varer[i].getVarenr()) {
+				svar = varer[i];
+			}
+			i++;
+		}
+		return svar;
 
 	}
 
@@ -46,8 +55,11 @@ public class Varelager {
 
 	public void printVarelager() {
 
-		throw new TODO("printVarelager");
-
+		System.out.println(SEP);
+		for (int i = 0; i < varer.length; i++) {
+			System.out.println(varer[i].toString());
+		}
+		System.out.println(SEP);
 	}
 
 }
