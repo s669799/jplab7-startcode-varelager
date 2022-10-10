@@ -24,7 +24,6 @@ public class Varelager {
 			lagtTil = true;
 			antall++;
 		}
-
 		return lagtTil;
 
 	}
